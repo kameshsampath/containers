@@ -15,6 +15,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <fabric8-maven-plugin.version>3.3.3</fabric8-maven-plugin.version>
+    <docker.image>kameshsampath/389ds:latest</docker.image>
   </properties>
 
   <build>

@@ -30,7 +30,7 @@ spec:
             configMapKeyRef:
               key: "dirsrv-suffix"
               name: "dirsrv-389ds"
-        image: "kameshsampath/389ds:${project.version}"
+        image: "${docker.image}"
         imagePullPolicy: "IfNotPresent"
         name: "dirsrv-389ds"
         ports:
