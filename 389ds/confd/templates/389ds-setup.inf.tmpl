@@ -4,7 +4,7 @@ SuiteSpotUserID         = nobody
 SuiteSpotGroup          = nobody
 ConfigDirectoryAdminID  = {{getv "/dirsrv/admin/username"}}
 ConfigDirectoryAdminPwd = {{getv "/dirsrv/admin/password"}}
-ConfigDirectoryLdapURL  = ldap://{{getv "/dirsrv/hostname"}}:389/o=NetscapeRoot
+ConfigDirectoryLdapURL  = ldap://{getv "/dirsrv/hostname"}}:389/o=NetscapeRoot
 
 [slapd]
 SlapdConfigForMC        = Yes

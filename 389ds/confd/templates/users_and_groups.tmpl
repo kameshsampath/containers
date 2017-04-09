@@ -1,59 +1,5 @@
 version: 1
 
-dn: cn=Directory Administrators,{{getv "/dirsrv/suffix"}}
-objectClass: top
-objectClass: groupofuniquenames
-cn: Directory Administrators
-uniqueMember: cn=Directory Manager
-
-dn: ou=Groups,{{getv "/dirsrv/suffix"}}
-objectClass: top
-objectClass: organizationalunit
-ou: Groups
-
-dn: ou=People,{{getv "/dirsrv/suffix"}}
-objectClass: top
-objectClass: organizationalunit
-ou: People
-
-dn: ou=Special Users,{{getv "/dirsrv/suffix"}}
-objectClass: top
-objectClass: organizationalUnit
-ou: Special Users
-description: Special Administrative Accounts
-
-dn: cn=Accounting Managers,ou=Groups,{{getv "/dirsrv/suffix"}}
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: Accounting Managers
-description: People who can manage accounting entries
-ou: groups
-uniqueMember: cn=Directory Manager
-
-dn: cn=HR Managers,ou=Groups,{{getv "/dirsrv/suffix"}}
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: HR Managers
-description: People who can manage HR entries
-ou: groups
-uniqueMember: cn=Directory Manager
-
-dn: cn=QA Managers,ou=Groups,{{getv "/dirsrv/suffix"}}
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: QA Managers
-description: People who can manage QA entries
-ou: groups
-uniqueMember: cn=Directory Manager
-
-dn: cn=PD Managers,ou=Groups,{{getv "/dirsrv/suffix"}}
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: PD Managers
-description: People who can manage engineer entries
-ou: groups
-uniqueMember: cn=Directory Manager
-
 dn: cn=ClusterAdmins,ou=Groups,{{getv "/dirsrv/suffix"}}
 objectClass: groupOfUniqueNames
 objectClass: top
@@ -100,7 +46,7 @@ mail: david.berger@example.com
 member: cn=Developers,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001103
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=lotti,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -117,7 +63,7 @@ mail: lotti.stein@example.com
 member: cn=consumers,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001106
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=rolf,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -134,7 +80,7 @@ mail: rolf.hess@example.com
 member: cn=business,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001109
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=julia,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -151,7 +97,7 @@ mail: julia.maurer@example.com
 member: cn=Managers,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001100
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=martin,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -168,7 +114,7 @@ mail: martin.gall@example.com
 member: cn=consumers,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001107
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=james,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -185,7 +131,7 @@ mail: james@example.com
 member: cn=Managers,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001104
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=raja,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -202,7 +148,7 @@ mail: raja.fauchs@example.com
 member: cn=business,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001108
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=john,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -219,7 +165,7 @@ mail: john.stucki@example.com
 member: cn=Business,ou=Groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001105
 ou: People
-userPassword:: password
+userPassword: password
 
 dn: uid=admin,ou=People,{{getv "/dirsrv/suffix"}}
 objectClass: organizationalPerson
@@ -236,4 +182,4 @@ mail: admin@example.com
 member: cn=ClusterAdmins,ou=groups,{{getv "/dirsrv/suffix"}}
 mobile: 9900001101
 ou: People
-userPassword:: password
+userPassword: password
