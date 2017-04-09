@@ -30,7 +30,17 @@ docker run -d --name demo-389ds -e "DIRSRV_ADMIN_USERNAME=myadmin,DIRSRV_ADMIN_P
 `DIRSRV_HOSTNAME` - can be ignored as Docker automatically sets it via `HOSTNAME` variable
 
 # Run on Kubernetes or OpenShift
-<<WIP>>
+
+If you have a running verison of kubernetes or OpenShift you can just do `mvn clean install && mvn fabric8:deploy` to deploy
+directory server on to Kubernetes/OpenShift 
+
+To know the directory server service port in Kubernetes use the command 
+
+`kubectl get svc dirsrv-389ds`
+
+To know the directory server service port in OpenShift use the command 
+
+`oc get routes dirsrv-389ds`
 
 # Third-party tools 
 
